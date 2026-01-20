@@ -41,13 +41,21 @@ python nmf.py \
 --values (required): CSV file containing the data matrix
 
 --row_info (optional, required for plotting): CSV with row metadata (coordinates)
+
 --components: Number of NMF components (default: 16)
+
 --iterations: Training iterations (default: 1000)
+
 --lr: Learning rate (default: 0.01)
+
 --save_output: Save factorization matrices W.csv and H.csv
+
 --plot:  Plot NMF components
+
 --plot_cols: Number of columns in plot grid (default: 4)
+
 --plot_output: Filename for component plot (default: nmf_components.png)
+
 --flip_y/--flip_x: Flip axes for visualization 
 
 Results in Figure 6 and 7 were obtained by running the following:
@@ -62,6 +70,7 @@ python nmf.py \
 
 
 ### VAE
+**Command-line arguments:**
 ```bash
 python vae.py \
 --row_info ROW_INFO \
@@ -73,6 +82,22 @@ python vae.py \
 [--nrows NROWS] \
 --output_png OUTPUT_PNG
 ```
+--row_info (required): CSV file with row metadata (coordinates)
+
+--col_info (required): CSV file with ion metadata (m/z values) 
+
+--values (required): CSV file containing the data matrix
+
+--latent_dim: Latent space dimensions (default: 16) 
+
+--epochs: Training epochs (default: 100)
+
+--lr: Learning rate (default: 0.001)
+
+--nrows: Random subset of rows for testing
+
+--output_png (required): Filename for latent component plot. 
+
 
 Results in Figure 8 were obtained by running the following:
 ```bash
