@@ -38,7 +38,7 @@ python nmf.py \
 [--flip_y] \
 [--flip_x] 
 ```
---values (required): CSV file containing the data matrix
+--values (required): CSV file containing the data matrix \n
 --row_info (optional, required for plotting): CSV with row metadata (coordinates)
 --components: Number of NMF components (default: 16)
 --iterations: Training iterations (default: 1000)
