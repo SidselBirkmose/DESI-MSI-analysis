@@ -38,7 +38,38 @@ python nmf.py \
 [--flip_x] 
 ```
 
+Results in Figure 6 and 7 were obtained by running the following:
+```bash
+python nmf.py \
+--values values.csv \
+--row_info row_info.csv \
+--components 16 \
+--iterations 1000 \
+--plot
+```
+
+
 ### VAE
 ```bash
-python vae.py --values values.csv --row_info row_info.csv --col_info col_info.csv --output_png results.png
+python vae.py \
+--row_info ROW_INFO \
+--col_info COL_INFO \
+--values VALUES \
+[--latent_dim LATENT_DIM] \
+[--epochs EPOCHS] \
+[--lr LR] \
+[--nrows NROWS] \
+--output_png OUTPUT_PNG
 ```
+
+Results in Figure 8 were obtained by running the following:
+```bash
+python vae.py \
+    --row_info row_info.csv \
+    --col_info col_info.csv \
+    --values values.csv \
+    --latent_dim 16 \
+    --epochs 100 \
+    --output_png VAE_100_epochs.png
+```
+
