@@ -23,6 +23,7 @@ The code expects input data in CSV format:
 ## Usage
 
 ### NMF
+**Command-line arguments:**
 ```bash
 python nmf.py \
 --values VALUES \
@@ -37,6 +38,16 @@ python nmf.py \
 [--flip_y] \
 [--flip_x] 
 ```
+--values (required): CSV file containing the data matrix
+--row_info (optional, required for plotting): CSV with row metadata (coordinates)
+--components: Number of NMF components (default: 16)
+--iterations: Training iterations (default: 1000)
+--lr: Learning rate (default: 0.01)
+--save_output: Save factorization matrices W.csv and H.csv
+--plot:  Plot NMF components
+--plot_cols: Number of columns in plot grid (default: 4)
+--plot_output: Filename for component plot (default: nmf_components.png)
+--flip_y/--flip_x: Flip axes for visualization 
 
 Results in Figure 6 and 7 were obtained by running the following:
 ```bash
