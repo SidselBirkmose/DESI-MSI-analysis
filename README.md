@@ -24,7 +24,18 @@ The code expects input data in CSV format:
 
 ### NMF
 ```bash
-python nmf.py --values values.csv --components 16 --iterations 1000 --plot
+python nmf.py \
+--values VALUES \
+[--row_info ROW_INFO] \
+[--components COMPONENTS] \
+[--iterations ITERATIONS] \
+[--lr LR] \
+[--save_output] \
+[--plot] \
+[--plot_cols PLOT_COLS] \
+[--plot_output PLOT_OUTPUT] \
+[--flip_y] \
+[--flip_x] 
 ```
 
 ### VAE
