@@ -25,7 +25,9 @@ The code expects input data in CSV format:
 ### NMF
 ```bash
 python nmf.py --values values.csv --components 16 --iterations 1000 --plot
+```
 
 ### VAE
 ```bash
 python vae.py --values values.csv --row_info row_info.csv --col_info col_info.csv --output_png results.png
+```
